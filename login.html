@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="card">
+        <div class="front">
+            <div class="ring">
+                <i style="--clr:#ff4d00;"></i>
+                <i style="--clr:#ff0057;"></i>
+                <i style="--clr:#5744ff;"></i>
+                <div class="login">
+                    <h2>Student Portal</h2>
+                    <h2>login</h2>
+                    <div class="inputBx">
+                        <input type="text" placeholder="username">
+                    </div>
+                    <div class="inputBx">
+                        <input type="password" placeholder="password" id="password">
+                        <img src="show.png" alt="" class="pass-icon" id="pass-icon" onclick="password()">
+                    </div>
+                    <div class="inputBx">
+                        <input type="submit" value="sign in">
+                    </div>
+                    <div class="links">
+                        <a href="#">Forgot password</a>
+                        <a href="#signup" id="flipToSignUp">sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="back">
+            <div class="ring">
+                <i style="--clr:#c800ff;"></i>
+                <i style="--clr:#ff7300;"></i>
+                <i style="--clr:#449eff;"></i>
+                <div class="login" id="signup">
+                    <h2>Student Portal</h2>
+                    <h2>SignUp</h2>
+                    <div class="inputBx">
+                        <input type="text" placeholder="username">
+                    </div>
+                    <div class="inputBx">
+                        <input type="email" placeholder="Type your email">
+                    </div>
+                    <div class="inputBx">
+                        <input type="password" placeholder="password" id="signupPassword">
+                        <img src="show.png" alt="" class="pass-icon" id="signup-pass-icon" onclick="signupPassword()">
+                    </div>
+                    <div class="inputBx">
+                        <input type="submit" value="sign up">
+                    </div>
+                    <div class="links">
+                        <a href="#">Already have an account</a>
+                        <a href="#login" id="flipToSignIn">sign In</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
